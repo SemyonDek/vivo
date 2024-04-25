@@ -1,0 +1,124 @@
+#order_body {
+    padding: 40px 0;
+}
+.left-block {
+    width: 70%;
+    float: left;
+    background: #fff;
+    padding: 15px 30px 50px 0;
+    position: relative;
+    border-right: 1px solid #eee;
+}
+.left-block::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+}
+.right-block {
+    width: 30%;
+    float: left;
+    padding: 15px 0 15px 30px;
+    height: 100px;
+    position: relative;
+}
+.clear-both {
+    clear: both;
+}
+.title-basket {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+}
+.left-block form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.title_form {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.left-block form input[type='text'] {
+    width: 60%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+fieldset {
+    width: 60%;
+    margin-bottom: 10px;
+    border: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+fieldset label {
+    width: 40%;
+}
+.radio_block {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+input[type="radio"] {
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #FBB321;
+    transition: 0.2s all linear;
+    position: relative;
+    top: 2px;
+}
+input[type="radio"]:checked {
+    border: 6px solid #FBB321;
+}
+textarea {
+    margin-top: 20px;
+    width: 60%;
+    margin-right: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.next_order {
+    width: 20%;
+    height: 30px;
+    background-color: #FBB321;
+    color: #fff;
+}
+.next_order:hover {
+    background: linear-gradient(180deg,#fcbd52 0%,#fcbd52 100%);
+}
+
+.block_basket_amount {
+    padding: 20px;
+    border: 1px solid black;
+}
+.amount_basket {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.amount_basket span {
+    color: #FBB321;
+}
+.amount_basket span::after, 
+.amount_old_basket::after, 
+.sale_basket::after {
+    content: ' ₽';
+}
+.sale_basket {
+    margin-top: 10px;
+}

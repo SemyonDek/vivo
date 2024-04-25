@@ -1,0 +1,185 @@
+#account_body {
+    padding: 40px 0;
+}
+.title-basket {
+    /* margin-top: -20px; */
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+}
+.info_user {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px 0;
+}
+.item_info_user_text {
+    width: 20%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.item_info_user_form {
+    width: 80%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.button_account {
+    width: 40%;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(180deg,#FE9506 0%,#FAC333 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_account:hover {
+    background: linear-gradient(180deg,#fcbd52 0%,#fcbd52 100%);
+}
+table {
+    width: 60%;
+    margin: 0 auto;
+}
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+thead {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+td {
+    padding: 5px;
+}
+td.number_order {
+    width: 10%;
+    text-align: center;
+}
+td.valueProd_order {
+    width: 25%;
+    text-align: center;
+}
+td.amount_order {
+    width: 25%;
+    text-align: center;
+    font-weight: 600;
+}
+tbody td.amount_order {
+    font-size: 20px;
+}
+tbody td.amount_order::after {
+    content: ' ₽';
+}
+td.details_order {
+    width: 20%;
+    text-align: center;
+}
+tbody td.details_order {
+    color: #999999;
+}
+.sost_order {
+    width: 25%;
+    text-align: center;
+}
+#info_block {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,0.5); /* фон */
+    z-index: 1050;
+    opacity: 0;
+}
+#info_block:target {
+    opacity: 1;
+    pointer-events: auto; /* элемент видим для событий мыши */
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#modal_main_body {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+#modal_body {
+    position: relative;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 800px;
+    min-height: 300px;
+    text-align: center;
+}
+a.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+}
+.title_modal {
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid #5f5f5f;
+    margin-bottom: 10px;
+}
+.text_modal {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 20px;
+    max-height: 500px;
+    overflow: scroll;
+}
+.text_modal span {
+    font-weight: 600;
+}
+.text_modal table {
+    width: 90%;
+}
+.text_modal table thead {
+    font-size: 16px;
+}
+td.name_prod {
+    width: 60%;
+}
+td.value_prod {
+    width: 20%;
+}
+td.amount_prod {
+    width: 20%;
+}
+tbody td.value_prod, 
+tbody td.amount_prod {
+    text-align: center;
+}
+tbody td.amount_prod::after {
+    content: ' ₽';
+}
+.text_modal span:last-child::after {
+    content: ' ₽';
+}

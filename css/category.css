@@ -1,0 +1,151 @@
+#category-body {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+h1.title_prod {
+    margin: 0;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+input[type=button].add_button {
+    width: 20%;
+    margin: 0 0 30px;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(180deg,#FE9506 0%,#FAC333 100%);
+}
+input[type=button].add_button:hover {
+    background: linear-gradient(180deg,#fcbd52 0%,#fcbd52 100%);
+}
+input[type=text].name_category {
+    width: 40%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    margin: 0 60% 20px 0;
+}
+table {
+    width: 40%;
+    margin: 0 30%;
+}
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+thead {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+td {
+    padding: 5px;
+}
+td.number_cat {
+    width: 10%;
+    text-align: center;
+}
+td.name_cat {
+    width: 65%;
+    /* font-weight: 600; */
+}
+td.function_cat {
+    width: 25%;
+}
+.function_body {
+    display: flex;
+    justify-content: space-evenly;
+}
+.function_body span {
+    cursor: pointer;
+    font-size: 22px;
+    filter: drop-shadow(0px 0px 3px #5f5f5f);
+    transition: 0.1s;
+}
+.function_body span:active {
+    filter: drop-shadow(0px 0px 1px #5f5f5f);
+}
+span.upd {
+    color: #FE9506;
+}
+span.del {
+    color: #cc0000;
+}
+#upd_block {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,0.5); /* фон */
+    z-index: 1050;
+    opacity: 0;
+}
+#upd_block:target {
+    opacity: 1;
+    pointer-events: auto; /* элемент видим для событий мыши */
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#modal_main_body {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+#modal_body {
+    position: relative;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+}
+a.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+}
+.title_modal {
+    width: 70%;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.text_modal {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 20px;
+}
+#upd_block input[type=button].add_button {
+    width: 60%;
+    margin-bottom: 0;
+}
+#upd_block input[type=text].name_category {
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,26 @@
+#footer {
+    background: #0E9DFD;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+#footer > .layout {
+    justify-content: space-between;
+}
+.social {
+    width: 15%;
+}
+.social-link {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+}
+.social-link a {
+    margin-right: 10px;
+}
+.social-link img {
+    width: 30px;
+    height: 30px;
+}

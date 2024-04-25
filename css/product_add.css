@@ -1,0 +1,164 @@
+#body_upd_prod {
+    margin: 40px 0;
+}
+h1.title_prod {
+    margin: 0;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+#main_block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.photos_block {
+    width: 50%;
+}
+.info_block {
+    width: 50%;
+}
+.line_characteristic {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.name_characteristic {
+    width: 40%;
+    font-size: 20px;
+}
+.characteristic {
+    width: 60%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+input.size {
+    width: 10%;
+}
+input[type=checkbox].characteristic {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0;
+    /* margin-top: 10px; */
+    border: 3px solid red;
+    transition: 0.2s all linear;
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+}
+input[type=checkbox].characteristic::before {
+    position: absolute;
+    left: 20px;
+    top: -4px;
+    content: '✗';
+    color: red;
+    transition: 0.2s all linear;
+    opacity: 1;
+}
+input[type=checkbox].characteristic:checked::before {
+    left: 0px;
+    top: -8px;
+    opacity: 0;
+}
+input[type=checkbox].characteristic::after {
+    position: absolute;
+    left: 0px;
+    top: -4px;
+    content: '✓';
+    opacity: 0;
+    transition: 0.2s all linear;
+}
+input[type=checkbox].characteristic:checked::after {
+    opacity: 1;
+    left: 15px;
+    top: -8px;
+    color: greenyellow;
+}
+input[type="checkbox"].characteristic:checked {
+    border: 8px solid greenyellow;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.file_photo {
+    margin-bottom: 30px;
+}
+input[type=file] {
+    width: 50%;
+}
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: linear-gradient(180deg,#FE9506 0%,#FAC333 100%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+input[type=file]::file-selector-button:hover, input.button:hover {
+    background: linear-gradient(180deg,#fcbd52 0%,#fcbd52 100%);
+}
+input.hidden {
+    display: none;
+}
+input[type=button].add_photo {
+    width: 25%;
+    height: 38px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(180deg,#FE9506 0%,#FAC333 100%);
+}
+input[type=button].add_photo:hover {
+    background: linear-gradient(180deg,#fcbd52 0%,#fcbd52 100%);
+}
+#phot_prod_add {
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start
+}
+.photo_add {
+    width: 100px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    margin-right: 10px;
+    text-align: right;
+    padding-top: 2px;
+    padding-right: 5px;
+}
+.del_photo {
+    padding: 0;
+    background-color: #FE9506;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    font-family: Acrom;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+.del_photo:active {
+    background-color: #d17a00;
+}
+.block_button {
+    width: 100%;
+    padding-top: 10px;
+}
+.block_button input[type=button].add_photo {
+    width: 40%;
+    margin-bottom: 20px;
+}
